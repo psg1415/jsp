@@ -1,0 +1,8 @@
+package com.controller;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+
+public class BoardListController extends HttpServlet {
+	protected void doGet()
+}

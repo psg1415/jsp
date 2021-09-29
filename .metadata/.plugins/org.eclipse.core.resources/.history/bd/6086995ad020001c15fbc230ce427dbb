@@ -1,0 +1,6 @@
+<%@ page contentType="text/html; charset=utf-8" %>
+<h1>param01.jsp</h1>
+<jsp:forward page="param02.jsp">
+	<jsp:param name="id" value="admin" />
+	<jsp:param name="name" value="관리자" />
+</jsp:forward>

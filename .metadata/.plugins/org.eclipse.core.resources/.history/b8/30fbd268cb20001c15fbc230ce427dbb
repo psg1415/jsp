@@ -1,0 +1,9 @@
+<%@ page contentType="text/html; charset=utf-8" %>
+<%
+	/**
+	* _jspService(HeepServletRequest request, HttpServletResponse response)
+	*
+	*/
+	
+	String num1 = request.getParameter("num1");
+%>

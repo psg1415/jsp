@@ -1,0 +1,12 @@
+<web-app>
+	<!-- 서블릿 설정 S -->
+	<servlet>
+		<servlet-name>BoardList</servlet-name>
+		<servlet-class>com.controller.BoardListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BoardList</servlet-name>
+		<url-pattern>/board/list</url-pattern>
+	</servlet-mapping>
+	<!-- 서블릿 설정 E -->
+</web-app>

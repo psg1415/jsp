@@ -1,0 +1,25 @@
+<%@ page contentType="text/html; charset=utf-8" %>
+<table border="1">
+	<tr>
+		<th>getRemoteAddr()</th>
+		<th><%=request.getRemoteAddr() %></th>
+	</tr>
+	<tr>
+		<th>getContentLength()</th>
+		<td>
+			<%=request.getContentLength() %>
+		</td>
+	</tr>
+	<tr>
+		<th>getCharacterEncoding()</th>
+		<td><%=request.getCharacterEncoding() %></td>
+	</tr>
+	<tr>
+		<th>getContentType()</th>
+		<td>request.getContentType()</td>
+	</tr>
+	<tr>
+		<th>getProtocol()</th>
+		<td><%=request.getProtocol() %></td>
+	</tr>
+</table>
