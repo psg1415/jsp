@@ -1,0 +1,20 @@
+<%!
+int num1 = 100;
+
+void printMethod(){
+	
+}
+%>
+
+<%
+int num2 = 200;
+out.print("num2 : " + num2);
+out.print("Hello World");
+
+/*
+void printMethod(){
+	out.print("method");
+}
+*/
+
+%>

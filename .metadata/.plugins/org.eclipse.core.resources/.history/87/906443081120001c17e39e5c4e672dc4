@@ -1,0 +1,5 @@
+<html>
+<body>
+	Today's date : <%= java.util.Calendar.getInstance().getTime() %>
+</body>
+</html>

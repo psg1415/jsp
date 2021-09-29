@@ -1,0 +1,23 @@
+
+<%
+/** _jspService() **/
+int num2 = 200;
+out.print("num2 : " + num2);
+out.print("Hello World");
+
+class InnerClass{
+	
+}
+
+InnerClass in = new InnerClass();
+
+%>
+
+<%!
+/** Below Class Name **/
+int num1 = 100;
+
+void printMethod(){
+	
+}
+%>
