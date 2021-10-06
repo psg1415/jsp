@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app>
+	<!--  서블릿 S -->
+	<!--  게시판 작성/수정 S -->
+	<servlet>
+		<servlet-name>Board_Write</servlet-name>
+		<servlet-class>com.controller.WriteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board_Write</servlet-name>
+		<url-pattern>/board/write</url-pattern>
+	</servlet-mapping>
+	<!-- 게시판 작성/수정 E  -->
+	<!-- 게시글 조회 S  -->
+	<servlet>
+		<servlet-name>Board_View</servlet-name>
+		<servlet-class>com.controller.ViewController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board_View</servlet-name>
+		<url-pattern>/board/view</url-pattern>
+	</servlet-mapping>
+	<!-- 게시글 조회 E -->
+	<!--  게시글 목록 S -->
+	<servlet>
+		<servlet-name>Board_List</servlet-name>
+		<servlet-class>com.controller.ListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board_List</servlet-name>
+		<url-pattern>/board/list</url-pattern>
+	</servlet-mapping>
+	<!--  게시글 목록 E -->
+	<!--  게시글 삭제 S -->
+	<servlet>
+		<servlet-name>Board_Delete</servlet-name>
+		<servlet-class>com.controller.DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board_Delete</servlet-name>
+		<url-pattern>/board/delete</url-pattern>
+	</servlet-mapping>
+	<!--  게시글 삭제 E -->
+	<!--  파일 업로드 S -->
+	<servlet>
+		<servlet-name>File_Upload</servlet-name>
+		<servlet-class>com.controller.FileUploadController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>File_Upload</servlet-name>
+		<url-pattern>/popup/upload</url-pattern>
+	</servlet-mapping>
+	<!-- 파일 업로드 E -->
+	<!-- 서블릿 E -->
+	<!-- 필터 S --> 
+	<!-- 사이트 메인 필터 S -->
+	<filter>
+		<filter-name>Site_Main</filter-name>
+		<filter-class>com.filter.SiteMainFilter</filter-class>
+		<init-param>
+			<param-name>DBDriver</param-name>
+			<param-value>com.mysql.cj.jdbc.Driver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>DBUrl</param-name>
+			<param-value>jdbc:mysql://localhost:3306/miniboard</param-value>
+		</init-param>
+		<init-param>
+			<param-name>DBUser</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>DBPass</param-name>
+			<param-value>@sg960613</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Site_Main</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!--  사이트 메인 필터 E -->
+	<!-- 필터 E  -->
+</web-app>

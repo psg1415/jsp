@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app>
+	<!--  서블릿 S -->
+	<!--  게시판 작성/수정 S -->
+	<servlet>
+		<servlet-name>Board_Write</servlet-name>
+		<servlet-class>com.controller.WriteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board_Write</servlet-name>
+		<url-pattern>/board/write</url-pattern>
+	</servlet-mapping>
+	<!-- 게시판 작성/수정 E  -->
+	<!-- 서블릿 E -->
+	<!-- 필터 S --> 
+	<!-- 사이트 메인 필터 S -->
+	<filter>
+		<filter-name>Site_Main</filter-name>
+		<filter-class>com.filter.SiteMainFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Site_Main</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!--  사이트 메인 필터 E -->
+	<!-- 필터 E  -->
+</web-app>
