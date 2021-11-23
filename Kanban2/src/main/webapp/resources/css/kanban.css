@@ -1,0 +1,164 @@
+.body-kanban h1 {
+	text-align: center;	
+}
+
+.work_list .box { 
+	width: calc(100% / 3); 
+	float: left; 
+	padding: 10px;
+}
+
+.work_list:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+.work_list li {
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.work_list h2 {
+	text-align: center;
+}
+
+.body-kanban .top_btn { 
+	text-align: right;
+	margin-top: 15px;
+}
+
+#frmAdd input[type='text'] {
+	width: 100%;
+	height: 45px; 
+	padding: 0 10px;
+	border: 1px solid #d5d5d5;	
+}
+
+#frmAdd textarea {
+	width: 100%; 
+	height: 180px;
+	padding: 10px;
+	border: 1px solid #d5d5d5;
+	resize: none;	
+}
+
+#frmAdd dl { 
+	display: table;
+	width: 100%;
+}
+
+#frmAdd dt { 
+	display: table-cell;
+	width: 100px;
+}
+
+#frmAdd dd {
+	display: table-cell;
+}
+
+#frmAdd .btn { 
+	display: inline-block;
+	padding: 2px 5px; 
+	border: 1px solid #212121;
+	cursor: pointer;
+	font-size: 11px;
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+#frmAdd .btn:hover {
+	background: #212121;
+	color: #ffffff;
+}
+
+#frmAdd #file_upload .rows { 
+	margin-bottom: 5px;
+}
+
+#frmAdd input[type='submit'] {
+	width: 100%; 
+	height: 50px;
+	font-size: 17px;
+	font-weight: bold;
+	background: #212121;
+	border: 0; 
+	cursor: pointer;
+	margin-top: 25px;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+#frmAdd .status_type input[type='radio'] { 
+	display: none;
+}
+
+#frmAdd .status_type input[type='radio']+label {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #f8f8f8;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-right: 3px; 
+}
+
+#frmAdd .status_type input[type='radio']:checked+label {
+	background: #212121;
+	color: #ffffff;
+} 
+
+/** kanban/view.jsp */
+.work_view dl { 
+	display: table; 
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px dashed #d5d5d5;
+}
+.work_view dl:last-of-type { 
+	border-bottom: 0;
+}
+
+.work_view dt {
+	display: table-cell;
+	vertical-align: middle; 
+	width: 100px; 
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.work_view .btns {
+	margin-top: 30px;
+}
+
+.work_view .btns .btn { 
+	width: 50%;
+	display: block;  
+	border: 1px solid #212121;
+	color: #212121;
+	font-weight: bold;
+	height: 45px;
+	line-height: 43px;
+	text-align: center;
+	cursor: pointer; 
+}
+.work_view .btns .btn:first-child {
+	float: left;
+}
+.work_view .btns .btn:last-child {
+	float: right;
+	background-color: #212121;
+	color: #ffffff;
+}
+
+.work_view .btns:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+
+
+
