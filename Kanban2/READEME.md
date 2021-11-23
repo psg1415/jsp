@@ -18,3 +18,18 @@
 
 
 ## 핵심기술
+### 1. 회원가입
+    동작 방식에 대한 설명
+
+    ```
+    if (process.env.NODE_ENV === 'development') require('dotenv').config()
+    var express = require('express');
+    var path = require('path');
+    var serveStatic = require('serve-static');
+    app = express();
+    app.use(serveStatic(__dirname));
+    var port = process.env.PORT || 5000;
+    app.listen(port);
+    console.log('server started '+ port);
+
+    ```
