@@ -1,0 +1,28 @@
+{ 
+	"Environment" : "development",
+	"PageTitle" : "shop",
+	"DB":  { 
+		"Driver": "com.mysql.cj.jdbc.Driver",
+		"Url" : "jdbc:mysql://localhost:3306/shop",
+		"user" : "root", 
+		"password" : "aA!12345"
+	},
+	"LogDir" : "C:\\logs",
+	"css": {
+		"" : ""
+	},
+	"js" : {
+		"" : ""
+	},
+	"AddonHeader" : {
+		"*" : "common"
+	},
+	"AddonFooter" : {
+		"*" : "common"
+	},
+	"NaverLogin" : {
+		"clientId" : "c68IXdbg__f8QCaQ5lCh",
+		"secret" : "Ej2iqZPiWm",
+		"callbackURL" : "http://localhost:8080/shop/member/naver_login"
+	}
+ }

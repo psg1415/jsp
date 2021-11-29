@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  font-size: 1rem;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 3px;
+  padding-left: 1rem;
+}
+header {
+  height: 8%;
+  border-bottom: 1px solid black;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+header .tit {
+  position: relative;
+}
+header .header_login {
+  position: absolute;
+  top: -1rem;
+  right: 2%;
+}
+nav h1 {
+  text-align: center;
+}
+main {
+  height: 84%;
+}
+main div {
+  padding: 30px;
+  text-align: center;
+}
+
+.rank {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rank div {
+  border: 1px solid black;
+  width: 50%;
+}
+footer {
+  height: 8%;
+}
+.footer {
+  border-top: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer span {
+  width: 100%;
+  text-align: center;
+  height: 5rem;
+  line-height: 4rem;
+}

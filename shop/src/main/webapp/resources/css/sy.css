@@ -1,0 +1,182 @@
+/** join.jsp */
+
+.join {
+	position:absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    border-radius:20px;
+}
+.join input {
+	width: 90%;
+	height: 30px;
+	padding-left: 20px;
+	border-radius:20px;
+	border-color: rgba(0, 0, 0, 0.25);
+}
+
+.join input[type=button] {
+	border-radius: 20px;
+	cursor: pointer;
+}
+.button1{  /**join, address 버튼*/
+	margin-top : 5%;
+}
+
+/** add.jsp */
+
+.add {
+	position:absolute;
+	top:30%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.add input {
+	border-radius: 10px;
+	border-color: rgba(0, 0, 0, 0.25);
+	width:70%;
+}
+.add input[type=button] {
+	border-radius: 10px;
+	width: 100%;
+	padding:2%;
+	cursor: pointer;
+}
+/** address.jsp */
+
+.address {
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.address input {
+	border-color: rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	width: 80%;
+}
+.address input[type=button] {
+	border-radius: 10px;
+	width: 100%;
+	padding:2%;
+	cursor: pointer;
+}
+/** account.jsp */
+
+.account {
+	position:absolute;
+	left:50%;
+	transform: translate(-50%, -50%);
+	margin-top: 15%;
+	line-height: 3;
+}
+.account input {
+	border-radius: 10px;
+	border-color: rgba(0, 0, 0, 0.25);
+}
+.account input[type=button]{
+	border-radius: 10px;
+	width: 100%;
+	padding:2%;
+	cursor: pointer;
+}
+
+/**index.jsp*/
+
+.main {
+	position: absolute;
+	transform: translate(-50%, -10%);
+	top:30%;
+	left:50%;
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10%;
+}
+ 
+.goodsPrice {
+	color: red;
+}
+.goodsImage {
+	width: 90%;
+	height: 60%;
+}
+.product1 {
+	width:60%;
+}
+.product2 {
+	width:60%;
+}
+.product3 {
+	width: 60%;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	h2{
+		margin: 10px;
+	}
+	.join {
+		width: 80%;
+		top: 54.5%;
+		height: 480px;
+	}
+	.join input {
+		padding: 0;
+		text-align: center;
+	}
+ 	.add {
+		width:60%;
+	}
+	.address {
+		width: 50%;
+	}
+	.account {
+		top:10%;
+		width: 80%;
+		text-align: center;
+	}
+	.account input[type=button]{
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-device-width: 768px){
+	h2{
+		margin: 10px;
+	}
+	.join {
+		width: 80%;
+		top: 54.5%;
+		height: 480px;
+	}
+	.join input {
+		padding: 0;
+		text-align: center;
+	}
+    .add {
+		width:80%;
+		text-align: center;
+ 	}
+	.address {
+		width: 60%;
+	}
+	
+	.account {
+		top:20%;
+		width: 100%;
+		text-align: center;
+	}
+	.account input[type=button]{
+		width: 40%;
+	}
+	.main {
+		width: 102%;
+		font-size: 10px;
+	}
+}
